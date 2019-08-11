@@ -1,0 +1,12 @@
+*.txt
+*.jpg
+*.JPG
+*.png
+*.PNG
+*.db
+*.vscode
+*.svg
+*.pyc
+/Contents
+/migrations
+/venv

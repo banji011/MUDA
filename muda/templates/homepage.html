@@ -1,0 +1,432 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<main role="main-home-wrapper" class="container">
+
+        
+
+    <div class="row">
+
+    
+
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+            
+            <article role="pge-title-content">
+
+                <header>
+
+                    <h2> <span> We are </span> A Branding Agency.</h2>
+
+                </header>
+
+                <p>We adopt professional strategies in creating lasting impressions that put your brand in the heart of your audience </p>
+
+            </article>
+
+        </section>
+
+        
+
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+            {% if wk[0] %}
+            <figure class="effect-oscar">
+
+                <img src="{{ url_for('static', filename='') }}{{ wk[0].work_image}}" alt="" class="img-responsive"/>
+
+                <figcaption>
+
+                    <!-- <h2> {{ wk[0].title }} <span> Identity</span></h2> -->
+
+                    <p> {{ wk[0].short_desc }} </p>
+
+                    <a href="{{ url_for('main.project',name=wk[0].title) }}">View more</a>
+
+                </figcaption>
+
+            </figure>
+            {% else %}
+            {% endif %}
+        </section>
+
+        
+
+        <div class="clearfix"></div>
+
+        
+
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+
+            <ul class="grid-lod effect-2" id="grid">
+
+                <li>
+                    {% if wk[3] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[3].work_image}}" alt="" class="img-responsive"/>
+
+                    <figcaption>
+
+                        
+
+                            <!-- <h2> {{ wk[3].title }} <span>Exhibition</span></h2> -->
+
+                            <p> {{wk[3].short_desc}} </p>
+
+                            <a href="{{ url_for('main.project',name=wk[3].title) }}">View more</a>
+
+                        
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+
+                </li>
+
+                
+
+                <li>
+                    {% if wk[4] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[4].work_image}}" alt="" class="img-responsive"/>
+
+                    <figcaption>
+
+                        <!-- <h2> {{wk[4].title}} <span>new Agency</span></h2> -->
+
+                        <p>{{wk[4].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[4].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+
+                </li>
+
+                <li>
+                    {% if wk[6] %}
+                    <figure class="effect-oscar">
+                        
+                    <img src="{{ url_for('static', filename='') }}{{ wk[6].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[6].title}} <span>Exhibition</span></h2> -->
+
+                            <p>{{wk[6].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[6].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+
+                </li>
+
+                <li>
+                    {% if wk[8] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[8].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[8].title}} <span>new Agency</span></h2> -->
+
+                        <p>{{wk[8].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[8].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+
+                </li>
+
+                <li>
+                    {% if wk[10] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[10].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[10].title}} <span>Exhibition</span></h2> -->
+
+                            <p>{{wk[10].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[10].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+
+                </li>
+
+                <li>
+                    {% if wk[12] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[12].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[12].title}} <span>new Agency</span></h2> -->
+
+                        <p>{{wk[12].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[12].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+                </li>
+
+                <li>
+                    {% if wk[14] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[14].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[14].title}}<span>Exhibition</span></h2> -->
+
+                            <p>{{wk[14].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[14].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+
+                </li>
+
+                <li>
+                    {% if wk[16] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[16].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[16].title}}<span>new Agency</span></h2> -->
+
+                        <p>{{wk[16].html}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[16].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+
+                </li>
+
+            </ul>
+
+        </section>
+
+        
+
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+
+            <ul class="grid-lod effect-2" id="grid">
+
+                <li>
+                    {% if wk[1] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[1].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[1].title}}<span>Galleria</span></h2> -->
+
+                        <p>{{wk[1].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[1].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+                </li>
+
+                <li>
+                    {% if wk[2] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[2].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[2].title}}<span>new Agency</span></h2> -->
+
+                        <p>{{wk[2].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[2].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+                </li>
+
+                <li>
+                    {% if wk[5] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[5].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[5].title}}<span>Galleria</span></h2> -->
+
+                        <p>{{wk[5].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[5].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif  %}
+
+                </li>
+
+                <li>
+                    {% if wk[7] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[7].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[7].title}}<span>new Agency</span></h2> -->
+
+                        <p>{{wk[14].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[7].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+
+                </li>
+
+                <li>
+                    {% if wk[9] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[9].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                       <!-- <h2>{{wk[9].title}}<span>Galleria</span></h2> -->
+
+                        <p>{{wk[9].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[9].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+                </li>
+
+                <li>
+                    {% if wk[11] %}
+                     <figure class="effect-oscar">
+
+                        <img src="{{ url_for('static', filename='') }}{{ wk[11].work_image}}" alt="" class="img-responsive"/>
+
+                         <figcaption>
+
+                        <!-- <h2>{{wk[11].title}}<span>new Agency</span></h2> -->
+
+                        <p>{{wk[11].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[11].title) }}">View more</a>
+
+                    </figcaption>
+
+                    </figure>
+                    {% else %}
+                    {% endif %}
+                </li>
+
+                <li>
+                    {% if wk[13] %}
+                        <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[13].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[13].title}}<span>Galleria</span></h2> -->
+
+                        <p>{{wk[13].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[13].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+                </li>
+
+                <li>
+                    {% if wk[15] %}
+                    <figure class="effect-oscar">
+
+                    <img src="{{ url_for('static', filename='') }}{{ wk[15].work_image}}" alt="" class="img-responsive"/>
+
+                     <figcaption>
+
+                        <!-- <h2>{{wk[15].title}}<span>new Agency</span></h2> -->
+
+                        <p>{{wk[15].short_desc}}</p>
+
+                        <a href="{{ url_for('main.project',name=wk[15].title) }}">View more</a>
+
+                    </figcaption>
+
+                </figure>
+                {% else %}
+                {% endif %}
+                </li>
+
+            </ul>
+
+        </section>
+
+        <div class="clearfix"></div>
+
+    </div>
+
+</main>
+
+{% endblock %}
